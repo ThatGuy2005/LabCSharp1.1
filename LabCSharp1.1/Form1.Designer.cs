@@ -1,4 +1,6 @@
-﻿namespace LabCSharp1._1
+﻿using System.Collections.Generic;
+
+namespace LabCSharp1._1
 {
     partial class Form1
     {
@@ -67,6 +69,7 @@
 
         private System.Windows.Forms.TextBox input;
         private System.Windows.Forms.Label instruction;
+        private List<MyThread> threads = new List<MyThread>();
     }
 }
 

@@ -32,7 +32,11 @@ namespace LabCSharp1._1
                         throw new ArgumentOutOfRangeException("number", "Number must be between 1 and 10.");
                     }
                     MessageBox.Show("You entered a number: " + number);
-
+                    for(int i = 0; i < number; i++)
+                    {
+                        MyThread thread = new MyThread(i + 1);
+                        threads.Add(thread);
+                    }
                 }
                 catch (FormatException)
                 {
