@@ -38,6 +38,7 @@
             this.input.Name = "input";
             this.input.Size = new System.Drawing.Size(100, 26);
             this.input.TabIndex = 0;
+            this.input.KeyDown += new System.Windows.Forms.KeyEventHandler(this.input_KeyDown_1);
             // 
             // instruction
             // 
